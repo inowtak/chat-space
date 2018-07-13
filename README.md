@@ -28,7 +28,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique: true|
+|name|string|null: false, index: true|
 
 ### Association
 - has_many :members
@@ -39,8 +39,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false|
-|group_id|integer|null: false|
+|user_id|reference|null: false|
+|group_id|reference|null: false|
 
 ### Association
 - belongs_to :group
@@ -61,8 +61,8 @@ Things you may want to cover:
 |------|----|-------|
 |body|string||
 |image|string||
-|user_id|integer|null: false|
-|group_id|integer|null: false|
+|user_id|reference|null: false|
+|group_id|reference|null: false|
 
 ### Association
 - belongs_to :group
