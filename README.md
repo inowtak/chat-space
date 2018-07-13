@@ -39,8 +39,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|reference|null: false|
-|group_id|reference|null: false|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -61,8 +61,8 @@ Things you may want to cover:
 |------|----|-------|
 |body|string||
 |image|string||
-|user_id|reference|null: false|
-|group_id|reference|null: false|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
